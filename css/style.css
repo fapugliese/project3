@@ -1,0 +1,175 @@
+.container {
+  display: grid;
+  grid-template: 1fr/1fr;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#paris {
+  background-color: #c5c5c5;
+  text-align: center;
+}
+
+#book {
+  text-align: center;
+}
+
+#logo {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  text-align: center;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+}
+
+#discover {
+  text-align: center;
+  font-weight: 100;
+  color: grey;
+}
+
+.button {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  background: #FF79DA;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  padding: 1em;
+  font-weight: 700;
+}
+
+.button--explore {
+  position: relative;
+  top: 50%;
+  left: 20%;
+}
+
+.step {
+  border: none;
+  min-width: 180px;
+  padding: 0 30px;
+  background: #c7c6c7;
+  display: inline-block;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.8em;
+  width: 90%;
+  margin: 0.4em;
+}
+
+.inside {
+  margin: 1em;
+}
+
+.inside--number {
+  position: absolute;
+  left: -1em;
+  color: #9356DC;
+  width: 1.8em;
+}
+
+#insidei {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+.restaurant {
+  border-radius: 100px;
+  margin: 3em;
+  display: grid;
+}
+
+.img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: inline-block;
+}
+
+#rname {
+  background-color: #dadad8;
+  padding: 1em;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.title {
+  text-align: left;
+}
+
+.heart-shape {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #fcfaf8;
+  right: -48em;
+  top: -4em;
+  border-style: solid;
+  border: black;
+}
+
+.heart-shape:before,
+.heart-shape:after {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.heart-shape:before {
+  bottom: 0px;
+  left: -1em;
+}
+
+.heart-shape:after {
+  top: -1em;
+  right: 0px;
+}
+
+.footer {
+  background-color: #363636;
+  color: white;
+}
+
+#logof {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  padding-left: 2em;
+  font-size: 1.2em;
+}
+
+.text--f {
+  padding: 3em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+.ftext {
+  padding: 3em;
+}
+
+/*# sourceMappingURL=style.css.map */
