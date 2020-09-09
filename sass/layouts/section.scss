@@ -8,17 +8,16 @@
     border: none;
     min-width: 180px;
     height: 50px;
-    padding: 0 30px;
     background: #FF79DA;
-    color: white;
-    display: inline-block;
+    color: rgb(250, 248, 248);
+    display: flex;
     border-radius: 100px;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
     padding: 1em;
     font-weight: 700;
+
     }
 
     .button--explore{
