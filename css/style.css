@@ -43,7 +43,7 @@
   height: 50px;
   background: #FF79DA;
   color: #faf8f8;
-  display: flex;
+  display: inline-flex;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
@@ -52,10 +52,9 @@
   font-weight: 700;
 }
 
-.button--explore {
-  position: relative;
-  top: 50%;
-  left: 20%;
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .step {
