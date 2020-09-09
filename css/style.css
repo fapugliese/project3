@@ -159,6 +159,10 @@
   display: grid;
 }
 
+.title--margin {
+  margin-left: 2.5em;
+}
+
 .footer {
   background-color: #363636;
   color: white;
