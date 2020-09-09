@@ -2,66 +2,112 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by  fapugliese</title>
+  <title>fapugliese</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/all.min.css" rel="stylesheet">
+  <link href="../css/fontawesome.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
   
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div>
-  <p><img id="logo" src="https://i.postimg.cc/Sx7By9NG/ohmyfood.png" alt="logo ohmyfood" title="ohmyfood"></p>
+<div class="container">
+<div id="head">
+  <a href="../home.html"><i class="fas fa-arrow-left" id="back"></i></a>
+  <h1 id="logo">ohmyfood</h1>
 </div>
-<div>
-  <h2>Bastille</h2>
-  <h4>ENTREES<h4>
-  <div>
-    <h3>Citrus Squid Carpaccio</h3>
-    <p>With orange zest            <strong>25E</strong></p>
-   </div>
-    <div>
-    <h3>Grandmother's Vegetable Soup</h3>
-    <p>Carrots, parsnips, Jerusalem artichoke            <strong>35E</strong></p>
-   </div>
-    <div>
-    <h3>Onion Soup</h3>
-    <p>Revisted<strong>20E</strong></p>
-   </div>
-    <h4>MAIN DISH<h4> 
-    <div>
-    <h3>Scallops</h3>
-    <p>With mashed parsnip            <strong>40E</strong></p>
-   </div>
-    <div>
-    <h3>Magret de canard</h3>
-    <p>With mashed potatoes<strong>35E</strong></p>
-   </div>
-   <div>
-    <h3>Game Hen</h3>
-    <p>With vegetables gnocchis            <strong>44E</strong></p>
-   </div>
-   <h4>DESSERTS<h4>
-   <div>
-    <h3>Floral Ice Cream</h3>
-    <p>With hazelnut butter            <strong>18E</strong></p>
-   </div>
-   <div>
-    <h3>Chocolate Lava Cake</h3>
-    <p>Revisted           <strong>22E</strong></p>
-   </div>
-     <div>
-    <h3>Napolean</h3>
-    <p>With blueberries and marzipan            <strong>23E</strong></p>
-   </div>
-   <button type="button">Order</button>
+<p><img class="img" src="../IMG/bastille2.jpg" alt="Trulli"></p>
+<div class="cover">
+  <div class="th">
+  <h2 class="title title--r">Bastille</h2>
+  <i class="far fa-heart"></i>
   </div>
- <footer>
-  <h5>ohmyfood<h5>
-    <h6>Suggest a restaurant</h6>
-    <h6>Become a partner</h6>
-    <h6>Legal</h6>
-    <h6><a>Contact</a></h6>
+  <h4 class="dish text">ENTREES<h4>
+  <div class="steps">
+    <div>
+    <h3 class="fname">Citrus Squid Carpaccio</h3>
+    <p class="fdescription text">With orange zest</p>
+    </div>
+    <div class="price">25€</div>
+   </div>
+    <div class="steps">
+    <div>
+    <h3 class="fname">Grandmother's Vegetable Soup</h3>
+    <p class="fdescription text">Carrots, parsnips, Jerusalem artichoke</p>
+    </div>
+    <div class="price">35€</div>
+   </div>
+    <div class="steps">
+    <div>
+    <h3 class="fname">Onion Soup</h3>
+    <p class="fdescription text">Revisted</p>
+  </div>
+    <div class="price">20€</div>
+   </div>
+    <h4 class="dish text">MAIN DISH<h4> 
+    <div class="steps">
+      <div>
+    <h3 class="fname">Scallops</h3>
+    <p class="fdescription text">With mashed parsnip</p>           
+    </div>
+  <div class="price">40€</div>
+  </div>
+    <div class="steps">
+      <div>
+    <h3 class="fname">Magret de canard</h3>
+    <p class="fdescription text">With mashed potatoes</p>
+  </div>
+    <div class="price">35€</div>
+   </div>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Game Hen</h3>
+    <p class="fdescription text">With vegetables gnocchis</p>
+  </div>
+    <div class="price">44€</div>
+   </div>
+   <h4 class="dish text">DESSERTS<h4>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Floral Ice Cream</h3>
+    <p class="fdescription text">With hazelnut butter</p>
+  </div>
+    <div class="price">18€</div>
+   </div>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Chocolate Lava Cake</h3>
+    <p class="fdescription text">Revisted</p>
+  </div>
+    <div class="price">22€</div>
+   </div>
+     <div class="steps">
+       <div>
+    <h3 class="fname">Napolean</h3>
+    <p class="fdescription text">With blueberries and marzipan</p>
+    </div>
+    <div class="price">23€</div>
+   </div>
+   <div class="order">
+   <button type="button" class="button buttom--order">Order</button>
+  </div>
+  </div>
+ <footer class="footer">
+  <h5 id="logof">ohmyfood<h5>
+    <h6 class="text text--f"> 
+     <i class="fas fa-utensils"></i>
+     <span class="ftext">Suggest a restaurant</span>
+    </h6>
+    <h6 class="text text--f">
+      <i class="fas fa-hands-helping"></i>
+      <span class="ftext">Become a partner</span>
+    </h6>
+    <h6 class="text text--f">Legal</h6>
+    <h6 class="text text--f"><a>Contact</a></h6>
   </footer>
-<!-- partial -->
+</div>
   
 </body>
 </html>

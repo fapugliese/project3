@@ -1,0 +1,77 @@
+#head{
+    display: grid;
+    grid-template: 5em/ 5% 95%;
+}
+
+#back{
+    position: relative;
+    top: 40%;
+    right: -50%;
+    font-size: 2em;
+}
+
+.title--r{
+    text-align: left;
+    margin-left: 2em;
+}
+
+.steps{
+    border: none;
+    min-width: 180px;
+    padding: 0 30px;
+    background: #b6b4b6;
+    border-radius: 50px;
+    display: grid;
+    grid-template: 1fr / 90% 10%;
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+
+.fname{
+    font-size: 2.4em;
+
+}
+
+.fdescription{
+    font-size: 1em;
+
+}
+
+.price{
+    display: flex;
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 1em;
+    right: -20%;
+    font-size: 2.8em;
+    }
+
+    .order{
+        text-align: center;;
+    }
+
+    .cover{
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        position: relative;
+        top: -7em;
+        background-color: white;
+    }
+
+    .th{
+        display: grid;
+        grid-template: 1fr / 90% 10%;
+    }
+
+    .fa-heart{
+        display: flex;
+        position: relative;
+        align-self: flex-end;
+        font-size: 2.4em;
+    }
+
+    .dish{
+        margin-left: 3em;
+    }

@@ -2,70 +2,120 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by  fapugliese</title>
+  <title>fapugliese</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/all.min.css" rel="stylesheet">
+  <link href="../css/fontawesome.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
   
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div>
-  <p><img id="logo" src="https://i.postimg.cc/Sx7By9NG/ohmyfood.png" alt="logo ohmyfood" title="ohmyfood"></p>
+<div class="container">
+<div id="head">
+  <a href="../home.html"><i class="fas fa-arrow-left" id="back"></i></a>
+  <h1 id="logo">ohmyfood</h1>
 </div>
-<div>
-  <h2>The Enchanted Plate</h2>
-  <h4>ENTREES<h4>
-  <div>
-    <h3>Foie Gras Ravioli</h3>
-    <p>With truffle cream            <strong>25E</strong></p>
-   </div>
-    <div>
-    <h3>Oscietra Caviar</h3>
-    <p>With buckwheat blinis            <strong>35E</strong></p>
-   </div>
-    <div>
-    <h3>Lobster and Leek Foam</h3>
-    <p>Marinated with orange zest<strong>20E</strong></p>
-   </div>
-    <div>
-    <h3>Duck Foie Gras</h3>
-    <p>With fig jam and grilled baguette<strong>35E</strong></p>
-   </div>
-    <h4>MAIN DISH<h4> 
-    <div>
-    <h3>Fresh Buttered Scallops</h3>
-    <p>With white celery puree            <strong>40E</strong></p>
-   </div>
-    <div>
-    <h3>Pan-Fried Lobster</h3>
-    <p>With mashed sweet potatoes<strong>35E</strong></p>
-   </div>
-   <div>
-    <h3>Braised Ox Tail</h3>
-    <p>With wild rice snd lemon zest            <strong>44E</strong></p>
-   </div>
-   <h4>DESSERTS<h4>
-   <div>
-    <h3>Chocolte and Hazelnut Macaroons</h3>
-    <p>With caramel butter ice cream            <strong>18E</strong></p>
-   </div>
-   <div>
-    <h3>Baba au rhum</h3>
-    <p>With lemon drizzle          <strong>22E</strong></p>
-   </div>
-     <div>
-    <h3>Lemon Meringue Pie</h3>
-    <p>Destructured            <strong>23E</strong></p>
-   </div>
-   <button type="button">Order</button>
+<p><img class="img" src="../IMG/plate2.jpg" alt="Trulli"></p>
+<div class="cover">
+  <div class="th">
+  <h2 class="title title--r">The Enchanted Plate</h2>
+  <i class="far fa-heart"></i>
   </div>
- <footer>
-  <h5>ohmyfood<h5>
-    <h6>Suggest a restaurant</h6>
-    <h6>Become a partner</h6>
-    <h6>Legal</h6>
-    <h6><a>Contact</a></h6>
+  <h4 class="dish text">ENTREES<h4>
+  <div class="steps">
+    <div>
+    <h3 class="fname">Foie Gras Ravioli</h3>
+    <p class="fdescription text">With truffle cream</p>
+    </div>
+    <div class="price">25€</div>
+   </div>
+    <div class="steps">
+    <div>
+    <h3 class="fname">Oscietra Caviar</h3>
+    <p class="fdescription text">With buckwheat blinis</p>
+    </div>
+    <div class="price">35€</div>
+   </div>
+    <div class="steps">
+    <div>
+    <h3 class="fname">Lobster and Leek Foam</h3>
+    <p class="fdescription text">Marinated with orange zest</p>
+  </div>
+    <div class="price">20€</div>
+   </div>
+   <div class="steps">
+    <div>
+    <h3 class="fname">Duck Foie Gras</h3>
+    <p class="fdescription text">With fig jam and grilled baguette</p>
+  </div>
+    <div class="price">35€</div>
+   </div>
+    <h4 class="dish text">MAIN DISH<h4> 
+    <div class="steps">
+      <div>
+    <h3 class="fname">Fresh Buttered Scallops</h3>
+    <p class="fdescription text">With white celery puree</p>           
+    </div>
+  <div class="price">40€</div>
+  </div>
+    <div class="steps">
+      <div>
+    <h3 class="fname">Pan-Fried Lobster</h3>
+    <p class="fdescription text">With mashed sweet potatoes</p>
+  </div>
+    <div class="price">35€</div>
+   </div>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Braised Ox Tail</h3>
+    <p class="fdescription text">With wild rice snd lemon zest</p>
+  </div>
+    <div class="price">44€</div>
+   </div>
+   <h4 class="dish text">DESSERTS<h4>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Chocolte and Hazelnut Macaroons</h3>
+    <p class="fdescription text">With caramel butter ice cream</p>
+  </div>
+    <div class="price">18€</div>
+   </div>
+   <div class="steps">
+     <div>
+    <h3 class="fname">Baba au rhum</h3>
+    <p class="fdescription text">With lemon drizzle</p>
+  </div>
+    <div class="price">22€</div>
+   </div>
+     <div class="steps">
+       <div>
+    <h3 class="fname">Lemon Meringue Pie</h3>
+    <p class="fdescription text">Destructured </p>
+    </div>
+    <div class="price">23€</div>
+   </div>
+   <div class="order">
+   <button type="button" class="button buttom--order">Order</button>
+  </div>
+  </div>
+ <footer class="footer">
+  <h5 id="logof">ohmyfood<h5>
+    <h6 class="text text--f"> 
+     <i class="fas fa-utensils"></i>
+     <span class="ftext">Suggest a restaurant</span>
+    </h6>
+    <h6 class="text text--f">
+      <i class="fas fa-hands-helping"></i>
+      <span class="ftext">Become a partner</span>
+    </h6>
+    <h6 class="text text--f">Legal</h6>
+    <h6 class="text text--f"><a>Contact</a></h6>
   </footer>
-<!-- partial -->
+</div>
   
 </body>
 </html>
+
