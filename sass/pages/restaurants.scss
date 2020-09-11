@@ -1,3 +1,8 @@
+$max-num-dish: 10;
+$anim-dur: 150ms * $max-num-dish;
+$anim-delay: $anim-dur / $max-num-dish;
+
+
 #head{
     display: grid;
     grid-template: 5em/ 5% 95%;
@@ -22,11 +27,56 @@
     background: #b6b4b6;
     border-radius: 50px;
     display: grid;
-    grid-template: 1fr / 90% 10%;
+    grid-template: 1fr / 75% 10% 15%;
     width: 90%;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: 1em;
+    animation: load $anim-dur;
+    animation-fill-mode: backwards;
+    &:active {
+        & > .checkl {
+            transform: scaleX(1);
+            animation-name: checkedl;
+            animation-duration: 800ms;
+        }
+    } 
+    @for $i from 1 through $max-num-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+     
+    }
+}
+@keyframes checkedl{
+    0%{
+        transform: scalex(0);
+        opacity: 0;
+    }
+    
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+       
+    }
+    1%{
+        transform: translate(0, 3em);
+    }
+    90%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1.0); 
+    }
 }
 
 .fname{
@@ -46,6 +96,21 @@
     margin-bottom: 1em;
     right: -20%;
     font-size: 2.8em;
+    background-color: yellow;
+    }
+
+    .checkl{
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: #99E2D0;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        right: -1.9em;
+        transition: transform;
+        transform-origin: 100% 50%;
+        animation-fill-mode: forwards;
     }
 
     .order{
@@ -75,3 +140,5 @@
     .dish{
         margin-left: 3em;
     }
+
+  

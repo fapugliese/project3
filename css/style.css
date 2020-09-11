@@ -208,13 +208,76 @@
   background: #b6b4b6;
   border-radius: 50px;
   display: grid;
-  grid-template: 1fr/90% 10%;
+  grid-template: 1fr/75% 10% 15%;
   width: 90%;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: 1em;
+  animation: load 1500ms;
+  animation-fill-mode: backwards;
+}
+.steps:active > .checkl {
+  transform: scaleX(1);
+  animation-name: checkedl;
+  animation-duration: 800ms;
+}
+.steps--1 {
+  animation-delay: 150ms;
+}
+.steps--2 {
+  animation-delay: 300ms;
+}
+.steps--3 {
+  animation-delay: 450ms;
+}
+.steps--4 {
+  animation-delay: 600ms;
+}
+.steps--5 {
+  animation-delay: 750ms;
+}
+.steps--6 {
+  animation-delay: 900ms;
+}
+.steps--7 {
+  animation-delay: 1050ms;
+}
+.steps--8 {
+  animation-delay: 1200ms;
+}
+.steps--9 {
+  animation-delay: 1350ms;
+}
+.steps--10 {
+  animation-delay: 1500ms;
 }
 
+@keyframes checkedl {
+  0% {
+    transform: scalex(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes load {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, 3em);
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .fname {
   font-size: 2.4em;
 }
@@ -230,6 +293,21 @@
   margin-bottom: 1em;
   right: -20%;
   font-size: 2.8em;
+  background-color: yellow;
+}
+
+.checkl {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  right: -1.9em;
+  transition: transform;
+  transform-origin: 100% 50%;
+  animation-fill-mode: forwards;
 }
 
 .order {
