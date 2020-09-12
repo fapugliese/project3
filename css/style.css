@@ -204,12 +204,12 @@
 .steps {
   border: none;
   min-width: 180px;
-  padding: 0 30px;
   background: #b6b4b6;
   border-radius: 50px;
   display: grid;
   grid-template: 1fr/75% 10% 15%;
-  width: 90%;
+  width: 95%;
+  overflow: hidden;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: 1em;
@@ -217,9 +217,8 @@
   animation-fill-mode: backwards;
 }
 .steps:active > .checkl {
-  transform: scaleX(1);
-  animation-name: checkedl;
-  animation-duration: 800ms;
+  animation: checkedl 900ms;
+  animation-fill-mode: forwards;
 }
 .steps--1 {
   animation-delay: 150ms;
@@ -253,13 +252,8 @@
 }
 
 @keyframes checkedl {
-  0% {
-    transform: scalex(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scaleX(1);
-    opacity: 1;
+  to {
+    transform: scalex(1);
   }
 }
 @keyframes load {
@@ -279,11 +273,16 @@
   }
 }
 .fname {
-  font-size: 2.4em;
+  font-size: 3.2em;
+  margin-left: 0.7em;
+  margin-top: 0.5em;
 }
 
 .fdescription {
-  font-size: 1em;
+  font-size: 2.2em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
 }
 
 .price {
@@ -304,10 +303,8 @@
   justify-content: center;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  right: -1.9em;
-  transition: transform;
-  transform-origin: 100% 50%;
-  animation-fill-mode: forwards;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 .order {
